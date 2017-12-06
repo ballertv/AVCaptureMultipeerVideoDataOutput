@@ -111,7 +111,7 @@
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dict];
         
         
-        [_session sendData:data toPeers:_session.connectedPeers withMode:MCSessionSendDataReliable error:nil];
+        [_session sendData:data toPeers:_session.connectedPeers withMode:MCSessionSendDataUnreliable error:nil];
     }
 }
 
